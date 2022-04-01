@@ -1,0 +1,111 @@
+/* body {
+    margin: 1rem;
+}
+footer > div {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+
+h1 {
+    color: blueviolet;
+}
+img {
+    width: 400px;
+}
+
+header {
+    background-color: bisque;
+    padding: 2rem;
+    text-align: center;
+}
+ */
+
+ :root {
+     --primary:#8959e4;
+ }
+
+
+ body {
+     color:#333333;
+     font-family: sans-serif;
+     max-width: 750px;
+     margin: 0 auto;
+     padding: 0 16px;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+
+ footer {
+     color: var(--primary);
+     font-weight: 700;
+     border-top: 2px solid var(--primary);;
+     margin-top: 2rem;
+     padding: 2rem 0;
+     text-align: center;
+ }
+
+ header {
+     margin-top: 2rem;
+     margin-bottom: 6rem;
+ }
+
+ h1 {
+     font-size: 64px;
+     margin-bottom: 2rem;
+ }
+
+ header a {
+     text-decoration: none;
+     cursor: pointer;
+     font-weight: 600;
+     margin-right: 0.5rem;
+     border: 1px solid #ddd5d5;
+     background: var(--primary);
+     color: #fff;
+     padding: 1rem;
+ }
+
+ header a:hover {
+    color: #000000;
+    font-weight: 700;
+ }
+ .portrait {
+     width: 450px;
+ }
+
+ .main-content{
+     flex-grow: 1;
+ }
+
+ input {
+     border: 1px solid var(--primary);
+     padding: 1rem;
+     width: 75%;
+ }
+
+ button {
+     cursor: pointer;
+     padding: 1rem;
+     border: 1px solid #ddd5d5;
+     background: var(--primary);
+     color: #fff;
+     float: right;
+     width: 20%;
+ }
+
+ .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+ }
+
+ .company-name {
+    font-size: 42px;
+    color: var(--primary);
+ }
