@@ -88,10 +88,14 @@ header {
      flex-grow: 1;
  }
 
+ .parent-form {
+     display: flex;
+ }
+
  input {
      border: 1px solid var(--primary);
      padding: 1rem;
-     width: 75%;
+     flex-grow: 1;
      font-style: oblique;
  }
 
@@ -102,7 +106,6 @@ header {
      background: var(--primary);
      color: #fff;
      float: right;
-     width: 20%;
      font-style: oblique;
  }
 
@@ -121,14 +124,18 @@ header {
  .weather-data-container {
     display: flex;
     margin-top: 2rem;
+    align-items: center;
  }
 
  #weather-image {
-     margin-right: 1rem;;
+     margin-right: 1rem;
+     height: 80px;
+     width: 80px;
  }
 
  #location {
     font-style: oblique;
     font-family: cursive;
     color: #633e76;
+    flex-grow: 1;
  }
