@@ -9,7 +9,12 @@ const forecast = ( longitude,latitude, callback) =>{
             callback("Unable to query, please check the query params and try later", undefined)
         } else {
             const data = response.body
-            callback(undefined, "Weather forecast is " +data.current.weather_descriptions +". The current temperature is "+ data.current.temperature + " and it feels like "+ data.current.feelslike )
+            console.log("DATA :::"+ data.current.weather_icons)
+            const weatherObj = {
+                Url: data.current.weather_icons,
+                Message:"Weather forecast is " +data.current.weather_descriptions +". The current temperature is "+ data.current.temperature + " and it feels like "+ data.current.feelslike
+            }
+            callback(undefined, weatherObj )
         }
     }) 
 }

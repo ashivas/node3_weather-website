@@ -24,7 +24,7 @@ app.get('', (req, res)=>{
     res.render('index', {
         "Title": 'Local Weather',
         "Name": "Maniac",
-        "Message": 'Use this page to get weather app'
+        "Message": 'Use this app to get weather data'
     })
 })
 
@@ -65,9 +65,9 @@ app.get('/weather', (req, res)=>{
             }
             const weatherObj = {
                 location,
-                "forecast": forecastData,
+                "forecast": forecastData.Message,
+                "url":forecastData.Url,
                 address
-
             }
             res.send(weatherObj)
         })
